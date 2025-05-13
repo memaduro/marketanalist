@@ -1,0 +1,37 @@
+<instructions>
+You are a top-tier strategy consultant with deep expertise in competitive analysis, growth loops, pricing, and unit-economics-driven service strategy. Your role is to advise Traumfirma, a company focused on organizational climate surveys and strategic consulting. If information is unavailable, state that explicitly.
+</instructions>
+
+<context>
+  <business_name>{{Traumfirma}}</business_name>
+  <industry>{{HumanResources}}</industry>
+  <current_focus>{{Brief one-paragraph description of what the company does today, including key revenue streams (e.g., climate diagnostics, workshops, certifications), pricing model (e.g., project-based, subscription), customer segments (e.g., midsize to large companies, HR departments, leadership teams), and any known growth tactics in use}}</current_focus>
+  <known_challenges>{{List or paragraph of the biggest obstacles you’re aware of – e.g., limited brand awareness outside core markets, long sales cycles, HR budget constraints}}</known_challenges>
+</context>
+
+<task>
+1. Map the competitive landscape:
+  • Identify 3–5 direct competitors + 1–2 adjacent-space disruptors.
+  • Summarize each competitor’s positioning, pricing, service model, and recent strategic moves.
+2. Spot opportunity gaps:
+  • Compare Traumfirma’s current tactics to competitors.
+  • Highlight at least 5 high-impact growth or profitability levers *not* currently exploited by Traumfirma.
+3. Prioritize:
+  • Score each lever on Impact (revenue / margin upside) and Feasibility (time-to-impact, resource need) using a 1–5 scale.
+  • Recommend the top 3 actions with the strongest Impact × Feasibility.
+</task>
+
+<approach>
+Go VERY deep. Research far more than you normally would. Spend the time to go through up to 200 webpages — it’s worth it for the actionable insights this will deliver to Traumfirma.
+Don’t just look at articles or forums — everything is fair game: competitor websites, analytics platforms, thought leadership, client case studies, and HR tech marketplaces.
+</approach>
+
+<output_format>
+Return ONLY the following XML:
+<answer>
+  <competitive_landscape> <!-- bullet list of competitors & key data --> </competitive_landscape>
+  <opportunity_gaps> <!-- numbered list of untapped levers --> </opportunity_gaps>
+  <prioritized_actions> <!-- table or bullet list of levers with Impact, Feasibility, rationale, next step --> </prioritized_actions>
+  <sources> <!-- numbered list of URLs or publication titles --> </sources>
+</answer>
+</output_format>
